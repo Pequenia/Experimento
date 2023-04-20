@@ -47,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login Page'),
+        title: Text('IQSwitch'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                 decoration: InputDecoration(labelText: 'Username'),
                 validator: (value) {
                   if (value!.isEmpty) {
-                    return 'Please enter a username';
+                    return 'Porfavor ingrese su nombre de usuario';
                   }
                   return null;
                 },
@@ -95,7 +95,7 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   Navigator.pushNamed(context, '/register');
                 },
-                child: Text('Register'),
+                child: Text('Registrar'),
               ),
             ],
           ),
@@ -131,7 +131,7 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Register Page'),
+        title: Text('Registrar'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -144,7 +144,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 decoration: InputDecoration(labelText: 'Username'),
                 validator: (value) {
                   if (value!.isEmpty) {
-                    return 'Please enter a username';
+                    return 'Porfavor ingrese su nombre de usuairo';
 }
 return null;
 },
@@ -196,7 +196,7 @@ ElevatedButton(
 onPressed: () {
 Navigator.pop(context);
 },
-child: Text('Back to Login'),
+child: Text('Regresar a inicio de sesion'),
 ),
 ],
 ),
